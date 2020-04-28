@@ -76,12 +76,12 @@ def create_places(city_id):
     if "user_id" not in json_data:
         abort(400, "Missing user_id")
 
-    user = storage.get(User, json_data["user_id"])
+    user = storage.get(User, json_data.get("user_id"))
     if user is None:
         abort(404)
 
     if "name" not in json_data:
-        abort(404, "Missing name")
+        abort(400, "Missing name")
 
     json_data["city_id"] = city_id
     new_place = Place(**json_data)
