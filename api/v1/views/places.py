@@ -103,7 +103,7 @@ def update_places(place_id):
 
     json_data = request.get_json()
     if json_data is None:
-        abort(404, "Not a JSON")
+        abort(400, "Not a JSON")
 
     for key, value in json_data.items():
         if key not in ["id", "user_id", "city_id", "created_at", "updated_at"]:
