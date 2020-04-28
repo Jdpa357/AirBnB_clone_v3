@@ -25,7 +25,7 @@ def get_places(city_id):
         abort(404)
 
     places = city.places
-    for place in places:        
+    for place in places:
         list_objects.append(place.to_dict())
     return jsonify(list_objects)
 
@@ -76,7 +76,7 @@ def create_places(city_id):
     if "user_id" not in json_data:
         abort(400, "Missing user_id")
 
-    user = storage.get(User, json_data.get("user_id"))
+    user = storage.get(User, json_data["user_id"])
     if user is None:
         abort(404)
 
