@@ -94,7 +94,7 @@ def create_reviews(place_id):
 
 @app_views.route('/reviews/<review_id>', methods=['PUT'],
                  strict_slashes=False)
-def update_places(review_id):
+def update_reviews(review_id):
     """
     Update review by id
     """
