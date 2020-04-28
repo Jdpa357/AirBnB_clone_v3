@@ -19,7 +19,7 @@ def get_all_users():
 @app_views.route('/users/<user_id>', methods=['GET'], strict_slashes=False)
 def get_user(user_id=None):
     ''' Retrieves an individual user object '''
-    obj = storage.get('User', user_id)
+    obj = storage.get(User, user_id)
     if obj is None:
         ''' If no state object with that id exists aborts '''
         abort(404)
@@ -31,7 +31,7 @@ def get_user(user_id=None):
                  strict_slashes=False)
 def delete_user(user_id=None):
     ''' Deletes an individual user object '''
-    obj = storage.get('User', user_id)
+    obj = storage.get(User, user_id)
     if obj is None:
         ''' If no state object with that id exists aborts '''
         abort(404)
@@ -44,7 +44,7 @@ def delete_user(user_id=None):
 @app_views.route('/users/<user_id>', methods=['PUT'], strict_slashes=False)
 def update_user(user_id=None):
     ''' Updates an individual user object '''
-    obj = storage.get('User', user_id)
+    obj = storage.get(User, user_id)
     if obj is None:
         ''' If no state object with that id '''
         abort(404)
