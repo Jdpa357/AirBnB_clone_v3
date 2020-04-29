@@ -20,7 +20,7 @@ return the number of objects in storage).
 
 ### [6. Not found](./v1/views/app.py)
 * Error 404 handler for the app file in the API project
-(https://img.shields.io/static/v1?label=<LABEL>404=<MESSAGE>&color=RED)
+[404](https://img.shields.io/static/v1?label=<LABEL>404=<MESSAGE>&color=RED)
 ```@app.errorhandler(404)
 def handle_404(exception):
     """
