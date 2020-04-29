@@ -131,4 +131,4 @@ class TestFileStorage(unittest.TestCase):
         models.storage.new(state)
         models.storage.save()
         last_count = models.storage.count(State)
-        self.assertEquals(first_count + 1, last_count)
+        self.assertEqual(first_count + 1, last_count)
