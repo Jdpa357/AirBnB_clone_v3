@@ -20,7 +20,7 @@ return the number of objects in storage).
 
 ### [6. Not found](./v1/views/app.py)
 * Error 404 handler for the app file in the API project
-![404](https://img.shields.io/badge/404-404-red)
+![404](https://img.shields.io/badge/-404-red)
 ```@app.errorhandler(404)
 def handle_404(exception):
     """
@@ -36,3 +36,9 @@ def handle_404(exception):
 
 ### [8. City](./v1/views/cities.py)
 * View that handles all default RestFul API actions for cities
+
+### [9. Amenity](./v1/views/amenities.py)
+* View that handles all default RestFul API actions for amenities
+
+### [10. User](./v1/views/users.py)
+* View that handles all default RestFul API actions for users
