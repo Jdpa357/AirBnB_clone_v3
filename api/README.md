@@ -19,8 +19,7 @@ return the number of objects in storage).
 * Flask index file that returns the json status response
 
 ### [6. Not found](./v1/views/app.py)
-* Error 404 handler for the app file in the API project
-![404](https://img.shields.io/badge/-404-red)
+* Error ![404](https://img.shields.io/badge/-404-red) handler for the app file in the API project
 ```@app.errorhandler(404)
 def handle_404(exception):
     """
@@ -42,3 +41,9 @@ def handle_404(exception):
 
 ### [10. User](./v1/views/users.py)
 * View that handles all default RestFul API actions for users
+
+### [11. Place](./v1/views/places.py)
+* View that handles all default RestFul API actions for places
+
+### [12. Reviews](./v1/views/places_reviews.py)
+* View that handles all default RestFul API actions for reviews
