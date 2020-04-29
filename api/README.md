@@ -47,3 +47,9 @@ def handle_404(exception):
 
 ### [12. Reviews](./v1/views/places_reviews.py)
 * View that handles all default RestFul API actions for reviews
+
+### [13. HTTP access control (CORS)](./v1/app.py)
+* Update on api.py file to create a Cross-Origin Resource Sharing(CORS) in
+to return a custom HTTP response header:
+```< Access-Control-Allow-Origin: 0.0.0.0
+```
