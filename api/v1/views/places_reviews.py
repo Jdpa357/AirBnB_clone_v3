@@ -25,8 +25,8 @@ def get_reviews(place_id):
         abort(404)
 
     places = place.reviews
-    for place in places:
-        list_objects.append(place.to_dict())
+    for place_r in places:
+        list_objects.append(place_r.to_dict())
     return jsonify(list_objects)
 
 
@@ -84,7 +84,7 @@ def create_reviews(place_id):
         abort(400, "Missing text")
 
     json_data["place_id"] = place_id
-    new_place = Place(**json_data)
+    new_place = Review(**json_data)
     storage.new(new_place)
     storage.save()
 
