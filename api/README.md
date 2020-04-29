@@ -2,7 +2,7 @@
 
 ## Description
 
-* This Directory contains files and documentation on the creation of a RestFul
+This Directory contains files and documentation on the creation of a RestFul
 API integration with the AirBnB clone project HTML templates for Holberton
 School
 
