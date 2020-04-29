@@ -20,7 +20,8 @@ return the number of objects in storage).
 
 ### [6. Not found](./v1/views/app.py)
 * Error ![404](https://img.shields.io/badge/-404-red) handler for the app file in the API project
-```@app.errorhandler(404)
+```
+@app.errorhandler(404)
 def handle_404(exception):
     """
     Handler for 404 error (Not Found)
@@ -51,5 +52,6 @@ def handle_404(exception):
 ### [13. HTTP access control (CORS)](./v1/app.py)
 * Update on api.py file to create a Cross-Origin Resource Sharing(CORS) in
 to return a custom HTTP response header:
-```< Access-Control-Allow-Origin: 0.0.0.0
+```
+< Access-Control-Allow-Origin: 0.0.0.0
 ```
